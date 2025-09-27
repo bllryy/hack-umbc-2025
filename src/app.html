@@ -1,0 +1,36 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    %sveltekit.head%
+</head>
+
+<body>
+
+    <div class="fixed top-5 left-5">
+        <div class="bg-[url('src/photo.jpeg')] w-[80px] h-[70px] bg-cover bg-right animate-fadeIn">
+        </div>
+
+        <div class="fixed top-8 left-20 text-4xl font-bold animate-fadeIn">
+            AuditFix
+        </div>
+        <span class="absolute bottom-0 left-0 w-full h-1 bg-blue-500"></span>
+
+        <div class="text-3xl relative top-25 ">
+           Making Fixing Fast
+        </div>
+    </div>
+
+
+        <div class="relative top-100">
+        <div style="display: contents">
+            %sveltekit.body%
+        </div>
+        </div>
+
+       
+
+</body>

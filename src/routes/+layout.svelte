@@ -1,0 +1,7 @@
+
+
+
+<main style="">
+  <slot />
+</main>
+
