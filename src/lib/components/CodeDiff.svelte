@@ -372,6 +372,7 @@
   .icon {
     width: 14px;
     height: 14px;
+    align-items: center;
   }
 
   @media (max-width: 768px) {

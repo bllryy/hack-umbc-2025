@@ -299,6 +299,14 @@
 
 <main>
   <div class="container">
+    <header>
+      <div class="header-content">
+        <img src="/black.png" alt="AuditFix Logo" class="logo">
+        <h1>AuditFix</h1>
+      </div>
+      <p>Security at Roadrunner speed.</p>
+      <p class="subheading">Smart AI, instant code repairs, no time wasted.</p>
+    </header>
 
     <FileUpload on:fileUploaded={handleFileUpload} />
 
@@ -322,10 +330,10 @@
               </button>
               {#if showCodeDiff && selectedIssue}
                 <button class="copy-all-btn" on:click={copyAllFixedCode} disabled={isGeneratingFix}>
-                  📋 Copy All Fixed
+                  Copy All Fixed
                 </button>
                 <button class="download-all-btn" on:click={downloadAllFixedCode} disabled={isGeneratingFix}>
-                  💾 Download Fixed
+                  Download Fixed
                 </button>
               {/if}
             </div>
@@ -346,7 +354,7 @@
                   <div class="small-spinner"></div>
                   Generating...
                 {:else}
-                  🤖 AI Fix
+                  AI Fix
                 {/if}
               </button>
             </div>
@@ -450,27 +458,51 @@
 </main>
 
 <style>
+  main {
+    background-color: #fefce8; /* cream background */
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
+    text-align: left;
   }
 
   header {
     text-align: center;
     margin-bottom: 3rem;
+    padding-top: 2rem;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 700;
     color: #1e293b;
-    margin-bottom: 0.5rem;
+    margin: 0;
+    letter-spacing: -0.02em;
   }
 
   header p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: #64748b;
+    margin-bottom: 2rem;
   }
 
   .analyzing {
@@ -528,7 +560,7 @@
 
   .export-buttons button {
     padding: 0.5rem 1rem;
-    background: #3b82f6;
+    background: #f59e0b;
     color: white;
     border: none;
     border-radius: 6px;
@@ -537,7 +569,7 @@
   }
 
   .export-buttons button:hover {
-    background: #2563eb;
+    background: #f59e0b;
   }
 
   .view-all-btn {

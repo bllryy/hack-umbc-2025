@@ -346,13 +346,13 @@
   }
 
   .tab-btn:hover {
-    color: #3b82f6;
+    color: #f6b83b;
     background: #f8fafc;
   }
 
   .tab-btn.active {
-    color: #3b82f6;
-    border-bottom-color: #3b82f6;
+    color: #f59e0b;
+    border-bottom-color: #f59e0b;
     background: #f8fafc;
   }
   .drop-zone {
@@ -369,11 +369,11 @@
     justify-content: center;
   }
   .drop-zone:hover {
-    border-color: #3b82f6;
+    border-color: #f6b83b;
     background: #eff6ff;
   }
   .drop-zone.drag-over {
-    border-color: #3b82f6;
+    border-color: #f6b83b;
     background: #dbeafe;
     transform: scale(1.02);
   }
@@ -381,9 +381,17 @@
     border-color: #f59e0b;
     background: #fffbeb;
   }
+  .drop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
   .drop-content svg {
     color: #64748b;
     margin-bottom: 1rem;
+    display: block;
   }
   .drop-content h3 {
     font-size: 1.25rem;
@@ -415,7 +423,7 @@
     width: 32px;
     height: 32px;
     border: 3px solid #f3f4f6;
-    border-top: 3px solid #3b82f6;
+    border-top: 3px solid #b37203;
     border-radius: 50%;
     animation: spin 1s linear infinite;
   }
@@ -517,7 +525,7 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background: #3b82f6;
+    background: #f59e0b;
     color: white;
     border: none;
     border-radius: 6px;
@@ -528,7 +536,7 @@
   }
 
   .fetch-btn:hover:not(:disabled) {
-    background: #2563eb;
+    background: #f6b83b;
   }
 
   .fetch-btn:disabled {
@@ -592,7 +600,7 @@
   }
 
   .github-file-btn:hover:not(:disabled) {
-    border-color: #3b82f6;
+    border-color: #f6b83b;
     background: #eff6ff;
     transform: translateY(-1px);
   }
@@ -606,6 +614,7 @@
   .file-icon {
     font-size: 1.5rem;
     flex-shrink: 0;
+    text-align: center;
   }
 
   .file-details {
